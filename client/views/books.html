@@ -1,0 +1,63 @@
+<!-- <div class="card border-primary mb-3" style="max-width: 18rem;" ng-init="getBooks()">
+    <div class="card-header">Latest Books</div>
+    <div class="card-body text-primary">
+        <div class="row">
+            <div ng-repeat="book in books">
+                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <h5 class="card-title">
+                            {{book.title}}
+                        </h5>
+                        <p class="card-text">{{book.description}}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{book.image_url}}" alt="images for books" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div> -->
+
+<div ng-init="getBooks()">
+    <!-- <img ng-src="{{book.image_url}}" alt="" srcset=""> -->
+    <div class="row">
+        <div ng-repeat="book in books">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+
+                    <img class="card-img-top" class="thumbnail" ng-src="{{book.image_url}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{book.title}}</h5>
+                        <p class="card-text">{{book.description}}</p>
+                        <a href="#!/books/details/{{book._id}}" class="btn btn-primary">View details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="panel panel-default" ng-init="getBooks()">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Latest
+        </h3>
+        <div class="panel-body">
+            <div class="row">
+                <div ng-repeat="book in books">
+                    <div class="col-md-3">
+                        <div class="col-md-6">
+                            {{book.title}}
+                        </div>
+                        <p> {{book.description}}</p>
+                        <div class="col-md-6">
+                            <img src="{{book.image_url}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
