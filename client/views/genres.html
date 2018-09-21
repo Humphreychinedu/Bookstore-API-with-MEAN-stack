@@ -1,0 +1,26 @@
+<!-- <div ng-init="getGenres()">
+    <img ng-src="{{book.image_url}}" alt="" srcset="">
+    <div class="row">
+        <div ng-repeat="genre in genres">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+
+                    <img class="card-img-top" class="thumbnail"  alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{genres.name}}</h5>
+                        <p class="card-text">{{book.description}}</p>
+                        <a href="#!/genres/details/{{book._id}}" class="btn btn-primary">View details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="row" ng-init="getGenres()">
+    <div class="col-md-8">
+        <div ng-repeat="genre in genres">
+                <h5>{{genre.name}}</h5> 
+        </div>
+    </div>
+</div>

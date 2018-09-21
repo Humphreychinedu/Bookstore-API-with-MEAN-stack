@@ -24,4 +24,12 @@ myApp.config(function($routeProvider) {
     .otherwise({
         redirectTo: '/'
     });
+
 });
+
+myApp.config(function($routeProvider) {
+    $routeProvider.when('/genres',{
+        controller: "GenreController",
+        templateUrl: "views/genres.html"
+    })
+})
